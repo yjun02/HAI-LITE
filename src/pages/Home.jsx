@@ -4,18 +4,21 @@ import { Link } from 'react-router-dom';
 const Home = () => {
   return (
     <div style={{ padding: '2rem', textAlign: 'center' }}>
-      <h1>HAI-LITE</h1>
-      <p>Handong AI Literacy & Highlight Project</p>
-      <div style={{ marginTop: '2rem', display: 'flex', gap: '1rem', justifyContent: 'center' }}>
-        <Link to="/builder" style={{ padding: '10px 20px', background: '#333', borderRadius: '4px' }}>
+      <h1 style={{ fontSize: '4rem', fontWeight: 'bold' }}>HAI-LITE</h1>
+      <p style={{ fontSize: '2rem', fontWeight: 'bold' }}>Handong AI Literacy & Highlight Project</p>
+
+      <p style={{ fontSize: '1.5rem', fontWeight: 'bold', marginBottom: '5rem' }}>github: <a style={{ textDecoration: 'underline' }} href="https://github.com/yjun02/HAI-LITE">yjun02/HAI-LITE</a></p>
+      <div style={{ marginTop: '2rem', display: 'flex', gap: '3rem', justifyContent: 'center' }}>
+        
+        <Link to="/builder" style={{ padding: '30px 50px', background: 'var(--bgSecondary)', color: 'var(--textPrimary)', borderRadius: '10px', fontWeight: 'bold', fontSize: '3rem', border: '3px solid var(--borderLight)' }}>
           🛠️ Builder Tool
         </Link>
-        <Link to="/viewer" style={{ padding: '10px 20px', background: '#00e5ff', color: '#000', borderRadius: '4px', fontWeight: 'bold' }}>
+        <Link to="/viewer" style={{ padding: '30px 50px', background: 'var(--bgSecondary)', color: 'var(--textPrimary)', borderRadius: '10px', fontWeight: 'bold', fontSize: '3rem', border: '3px solid var(--borderLight)' }}>
           💡 Viewer Tool
         </Link>
       </div>
     </div>
-  ); // Fixed syntax error here
+  );
 };
 
 export default Home;

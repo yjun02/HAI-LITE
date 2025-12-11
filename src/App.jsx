@@ -18,7 +18,7 @@ function ThemeSelector() {
         style={{
           padding: '0.5rem 1rem',
           background: 'var(--cardBg)',
-          border: '1px solid var(--borderLight)',
+          border: '2px solid var(--borderLight)',
           borderRadius: '6px',
           color: 'var(--textPrimary)',
           cursor: 'pointer',
@@ -118,8 +118,8 @@ function AppContent() {
             <ThemeSelector />
           </div>
           <div className="links">
-            <Link to="/builder">Builder</Link>
-            <Link to="/viewer">Viewer</Link>
+            <Link style={{ fontSize: '1.5rem', fontWeight: 'bold', border: '2px solid var(--borderLight)', borderRadius: '8px', padding: '0.4rem 1rem', cursor: 'pointer', transition: 'all 0.2s', textDecoration: 'none', margin: '5px', color: 'var(--textPrimary), background: var(--bgSecondary)' }} to="/builder">Builder</Link>
+            <Link style={{ fontSize: '1.5rem', fontWeight: 'bold', border: '2px solid var(--borderLight)', borderRadius: '8px', padding: '0.4rem 1rem', cursor: 'pointer', transition: 'all 0.2s', textDecoration: 'none', margin: '5px', color: 'var(--textPrimary)' }} to="/viewer">Viewer</Link>
           </div>
         </nav>
         <main className="content">

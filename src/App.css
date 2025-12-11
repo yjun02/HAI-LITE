@@ -11,19 +11,18 @@
   padding: 0 2rem;
   height: 60px;
   background-color: var(--surface-color);
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 2px solid var(--border-color);
 }
 
 .brand {
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 2rem;
   letter-spacing: 1px;
 }
 
 .links a {
   margin-left: 1.5rem;
   color: var(--text-dimary);
-  transition: color 0.2s;
 }
 
 .links a:hover {

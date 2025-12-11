@@ -542,7 +542,7 @@ const NetworkViz = ({ input, hidden1, hidden2, output, weights }) => {
                 justifyContent: 'end',
                 alignItems: 'center',
                 gap: '15px',
-                padding: '5px 10px'
+                padding: '0px 10px'
             }}>
                 <button 
                     onClick={() => startAnimation()}

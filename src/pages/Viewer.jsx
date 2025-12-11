@@ -244,7 +244,7 @@ const Viewer = () => {
                             weights={weights} 
                         />
                     ) : (
-                         <div style={{color: '#555', textAlign: 'center', fontSize: '1.2rem', margin: 'auto', height: '70vh'}}>
+                         <div style={{color: '#555', textAlign: 'center', fontSize: '1.2rem', margin: 'auto', height: '70vh', lineHeight: '70vh'}}>
                             {model ? "Click Predict to visualize" : "Upload or Load Sample Model"}
                          </div>
                     )}
