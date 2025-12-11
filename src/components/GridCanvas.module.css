@@ -1,0 +1,26 @@
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  gap: 2px;
+  width: clamp(300px, 40vmin, 600px); 
+  height: clamp(300px, 40vmin, 600px);
+  border: 1px solid var(--border-color);
+  background-color: #000;
+  touch-action: none; /* Prevent scroll on mobile while drawing */
+}
+
+.cell {
+  background-color: #222;
+  cursor: pointer;
+  transition: background-color 0.1s ease;
+}
+
+.cell:hover {
+  background-color: #333;
+}
+
+.cell.active {
+  background-color: #fff; /* High contrast for input */
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}

@@ -1,0 +1,111 @@
+:root {
+  /* Default theme (Dark Cyan) - will be overridden by ThemeContext */
+  --bgPrimary: #121212;
+  --bgSecondary: #1e1e1e;
+  --bgTertiary: #2a2a2a;
+  
+  --accent: #00e5ff;
+  --accentHover: #00d4eb;
+  --accentDim: rgba(0, 229, 255, 0.1);
+  
+  --secondary: #ff007a;
+  --secondaryHover: #e6006d;
+  
+  --textPrimary: #ffffff;
+  --textSecondary: #b0b0b0;
+  --textDim: #888888;
+  
+  --border: #333333;
+  --borderLight: rgba(255, 255, 255, 0.1);
+  --borderDashed: rgba(255, 255, 255, 0.2);
+  
+  --cardBg: rgba(0, 0, 0, 0.3);
+  --cardBorder: rgba(255, 255, 255, 0.1);
+  --inputBg: rgba(255, 255, 255, 0.05);
+  
+  /* Legacy variables for backward compatibility */
+  --bg-color: var(--bgPrimary);
+  --surface-color: var(--bgSecondary);
+  --primary-color: var(--accent);
+  --secondary-color: var(--secondary);
+  --text-color: var(--textPrimary);
+  --text-dimary: var(--textSecondary);
+  --border-color: var(--border);
+  
+  --grid-cell-size: 40px;
+  --grid-gap: 4px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: var(--bgPrimary);
+  color: var(--textPrimary);
+  width: 100vw;
+  overflow: hidden;
+  user-select: none;
+  -webkit-user-select: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: 600;
+  color: var(--textPrimary);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* SVG rendering fix - prevent black background artifacts */
+svg, svg * {
+  background: none !important;
+  background-color: transparent !important;
+}
+
+svg g, svg text, svg line, svg circle, svg path, svg rect {
+  background: none !important;
+  background-color: transparent !important;
+}
+
+svg line {
+  fill: none !important;
+}
+
+svg text {
+  background: transparent !important;
+  paint-order: stroke;
+}
+
+
+div::-webkit-scrollbar {
+  width: 5px;
+}
+div::-webkit-scrollbar-thumb {
+  background-color: var(--cardBorder);
+  border-radius: 3px;
+}
+div::-webkit-scrollbar-track {
+  background-color: var(--cardBg);
+  border-radius: 3px;
+}
